@@ -1,61 +1,47 @@
 /**
  * Created by Jimmy Banegas on 26/02/2015.
  */
-var menu = require('node-menu');
 
-var TestObject = function() {
-    var self = this;
-    self.fieldA = 'FieldA';
-    self.fieldB = 'FieldB';
-}
+var OpcionesDeMenu = require("./OpcionesDeMenu.js");
+var Cliente = require("./Cliente.js");
+var Empleado = require("./Empleado");
 
-TestObject.prototype.printFieldA = function() {
-    console.log(this.fieldA);
-}
 
-TestObject.prototype.printFieldB = function(arg) {
-    console.log(this.fieldB + arg);
-}
+var op = new  OpcionesDeMenu()
 
-var testObject = new TestObject();
+var s = new Cliente();
 
-menu.addDelimiter('-', 40, 'Main Menu');
+var readline = require('readline'),
+    rl = readline.createInterface(process.stdin, process.stdout);
 
-menu.addItem(
-    'No parameters',
-    function() {
-        console.log('No parameters is invoked');
-    });
+rl.setPrompt("    1.Insertar Empleado\n" +
+"    2.Modificar Empleado\n" +
+"    3.Buscar Empleado\n" +
+"    4.Listar\n" +
+"    5.Salir\n" +
+"    Ingrese su opcion> ");
+rl.prompt();
 
-menu.addItem(
-    "Print Field A",
-    testObject.printFieldA,
-    testObject);
+rl.on('line', function(line) {
+    switch(line.trim()) {
+        case '1':
+            op.agregar()
+            break;
+        case '2':
+            op.modificar()
+            break;
+        case '3':
+            op.buscar()
+            break;
+        case '4':
+            op.listar()
+            break;
+        case '5':
+            process.exit(0)
+            break;
+    }
+}).on('close', function() {
+    console.log('Have a great day!');
+    process.exit(0);
+});
 
-menu.addItem(
-    'Print Field B concatenated with arg1',
-    testObject.printFieldB,
-    testObject,
-    [{'name': 'arg1', 'type': 'string'}]);
-
-menu.addItem(
-    'Sum',
-    function(op1, op2) {
-        var sum = op1 + op2;
-        console.log('Sum ' + op1 + '+' + op2 + '=' + sum);
-    },
-    null,
-    [{'name': 'op1', 'type': 'numeric'}, {'name': 'op2', 'type': 'numeric'}]);
-
-menu.addItem(
-    'String and Bool parameters',
-    function(str, b) {
-        console.log("String is: " + str);
-        console.log("Bool is: " + b);
-    },
-    null,
-    [{'name': 'str', 'type': 'string'}, {'name': 'bool', 'type': 'bool'}]);
-
-menu.addDelimiter('*', 40);
-
-menu.start();
