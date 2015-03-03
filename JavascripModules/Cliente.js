@@ -5,13 +5,9 @@
 
 var method = Cliente.prototype;
 
-
-function Cliente(){
-
-}
+function Cliente(){}
 
 method.iniciarCliente = function(){
-    //var userString = JSON.stringify(emp);
     var s = require('net').Socket();
     s.connect(8888);
     return s;

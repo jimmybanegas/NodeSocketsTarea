@@ -5,31 +5,35 @@
 
 var method = OpcionesDeMenu.prototype;
 
+
 var Empleado = require("./Empleado.js")
-
 var Menu = require("./Menu.js")
+var Cliente = require("./Cliente.js")
 
-function OpcionesDeMenu(){
-
-}
+function OpcionesDeMenu(){}
 
 var prompt = require('prompt');
 
 method.agregar =  function(){
     prompt.start();
 
-    prompt.get(propertiesAgregar, function (err, result) {
-        if (err) { return onErr(err); }
+    return prompt.get(propertiesAgregar, function (err, result) {
+        if (err) {
+            return onErr(err);
+        }
 
-        var emp = new Empleado(result.codigo,result.nombre,result.correo,
-                               result.salario,result.identidad,result.telefono)
+        var emp = new Empleado(result.codigo, result.nombre, result.correo,
+            result.salario, result.identidad, result.telefono)
 
         var userString = JSON.stringify(emp);
 
-        console.log(userString)
+        var c = new Cliente()
 
-        prompt.end()
-    })
+        var client = c.iniciarCliente()
+
+        client.write('Guardar' + userString)
+
+    });
 }
 
 method.buscar = function(){
@@ -39,20 +43,19 @@ method.buscar = function(){
         if (err) { return onErr(err); }
         console.log('Command-line input received:');
         console.log('  Username: ' + result.username);
-
-
     });
 }
 
 method.listar = function(){
     prompt.start();
 
-    prompt.get(propertiesAgregar, function (err, result) {
+    return prompt.get(propertiesAgregar, function (err, result) {
         if (err) { return onErr(err); }
         console.log('Command-line input received:');
         console.log('  Username: ' + result.username);
         console.log('  Password: ' + result.password);
     });
+
 }
 
 method.tasas = function(){
@@ -68,6 +71,8 @@ method.modificar = function(codigo){
         console.log('  Username: ' + result.username);
         console.log('  Password: ' + result.password);
     });
+
+    return prompt;
 }
 
 
@@ -77,29 +82,25 @@ var propertiesAgregar = [
     },
     {
         name: 'nombre',
-        validator: /^[A-Za-záéíóúñ]{2,}([\s][A-Za-záéíóúñ]{2,})+$/,
-        warning: 'Nombre no válido'
+        validator: /^[A-Za-záéíóúñ]{2,}([\s][A-Za-záéíóúñ]{2,})+$/
     },
     {
         name: 'correo',
-        validator: /^[(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,4}$/,
-        warning: 'Correo no válido'
+        validator: /^[(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,4}$/
     },
     {
         name: 'salario',
-        validator: /[+-]?\d+(\.\d+)?/,
-        warning: 'Salario no válido'
+        validator: /[+-]?\d+(\.\d+)?/
     },
     {
         name: 'identidad',
-        validator: /^[0-9]{13}$/,
-        warning: 'Identidad no válida'
+        validator: /^[0-9]{13}$/
     },
     {
         name: 'telefono',
-        validator: /^[0-9]{8}$/,
-        warning: 'Telefono no válido'
-    }
+        validator: /^[0-9]{8}$/
+    },
+
 ];
 
 var propertiesBuscar = [
@@ -111,28 +112,23 @@ var propertiesBuscar = [
 var propertiesModificar = [
     {
         name: 'nombre',
-        validator: /^[A-Za-záéíóúñ]{2,}([\s][A-Za-záéíóúñ]{2,})+$/,
-        warning: 'Nombre no válido'
+        validator: /^[A-Za-záéíóúñ]{2,}([\s][A-Za-záéíóúñ]{2,})+$/
     },
     {
         name: 'correo',
-        validator: /^[(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,4}$/,
-        warning: 'Correo no válido'
+        validator: /^[(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,4}$/
     },
     {
         name: 'salario',
-        validator: /[+-]?\d+(\.\d+)?/,
-        warning: 'Salario no válido'
+        validator: /[+-]?\d+(\.\d+)?/
     },
     {
         name: 'identidad',
-        validator: /^[0-9]{13}$/,
-        warning: 'Identidad no válida'
+        validator: /^[0-9]{13}$/
     },
     {
         name: 'telefono',
-        validator: /^[0-9]{8}$/,
-        warning: 'Telefono no válido'
+        validator: /^[0-9]{8}$/
     }
 ];
 
