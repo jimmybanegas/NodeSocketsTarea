@@ -7,7 +7,7 @@ var method = OpcionesDeMenu.prototype;
 
 var Empleado = require("./Empleado.js")
 var Cliente = require("./Cliente.js")
-
+var Tasa = require(("./TasaDeCambio.js"))
 
 function OpcionesDeMenu(){}
 
@@ -35,8 +35,6 @@ method.agregar =  function(){
         var userString = JSON.stringify(emp);
 
         var c = new Cliente()
-
-        console.log(userString)
 
         var client = c.iniciarCliente()
 
@@ -67,25 +65,30 @@ method.buscar = function(){
 
 method.listar = function(){
     var c = new Cliente()
-    var client = c.iniciarCliente()        //console.log(userString)
+    var client = c.iniciarCliente()
 
-    client.write('Listar'+'{}')
+    var cambio = new Tasa();
 
-    client.on('data', function(data) {
-        var array = data.toString().split('\n')
-        for(i in array) {
-           // var parsedObj = JSON.parse(array[i]);
-            if(array[i]!=''){
-                var parsedObj = JSON.parse(array[i]);
-                console.log(parsedObj._codigo+' '+parsedObj._nombre+'       '+parsedObj._correo+
-                '       '+parsedObj._identidad+ '    '+parsedObj._telefono+ '    '+parsedObj._sueldo)
+    var i = 0;
+
+    var tasa;
+    tasa = cambio.getTasaDeCambio(i, function (resultado){
+        client.write('Listar'+'{}')
+
+        client.on('data', function(data) {
+            var array = data.toString().split('\n')
+
+            for(i in array) {
+                if(array[i]!=''){
+                    var parsedObj = JSON.parse(array[i]);
+                    console.log(parsedObj._codigo+' '+parsedObj._nombre+'       '+parsedObj._correo+
+                    '       '+parsedObj._identidad+ '    '+parsedObj._telefono+ '    $'+parseFloat(parsedObj._sueldo)/parseFloat(resultado))
+                }
             }
-        }
-        client.destroy(); // kill client after server's response
-    });
-}
+            client.destroy();
+        });
 
-method.tasas = function(){
+    });
 
 }
 

@@ -17,7 +17,14 @@ require('net').createServer(function (socket) {
              var obje= (data.toString()).substring(opcion.length,(data.toString()).length);
 
         if(opcion=='Guardar'){
-            arch.escribirArchivo(obje)
+            var parsedObj = JSON.parse(obje);
+            if(!arch.esRepetido(parsedObj._codigo &&
+                !arch.esRepetido(parsedObj._telefono
+                 &&arch.esRepetido(parsedObj._identidad)
+                && arch.esRepetido(parsedObj._correo)))){
+                arch.escribirArchivo(obje)
+            }
+
         }
         else if(opcion=='Buscar'){
             var parsedObj = JSON.parse(obje);
@@ -32,14 +39,15 @@ require('net').createServer(function (socket) {
         }
         else if(opcion=='Modificar'){
             var parsedObj = JSON.parse(obje);
-
             var emp =arch.buscar(parsedObj._codigo)
-
             console.log(emp)
             console.log(obje)
 
-            arch.editar(emp,obje)
-
+            if(!arch.esRepetido(!arch.esRepetido(parsedObj._telefono
+                &&arch.esRepetido(parsedObj._identidad)
+                && arch.esRepetido(parsedObj._correo)))) {
+                arch.editar(emp, obje)
+            }
         }
         var parsedObj = JSON.parse(obje);
 

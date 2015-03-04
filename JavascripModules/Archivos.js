@@ -4,7 +4,6 @@
 
 var method = Archivos.prototype;
 
-
 function Archivos(){}
 
 fs = require('fs');
@@ -22,7 +21,7 @@ method.esRepetido= function (parametro) {
     for(i in array) {
         var parsedObj = JSON.parse(array[i]);
         if(parsedObj._codigo==parametro || parsedObj._telefono==parametro
-        ||parsedObj._identidad==parametro){
+        ||parsedObj._identidad==parametro || parsedObj._correo==parametro){
             return true;
         }
     }
