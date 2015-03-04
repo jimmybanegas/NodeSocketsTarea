@@ -21,3 +21,10 @@
 {"_codigo":"380","_nombre":"rafa gansd","_correo":"ghj@fghj.km","_sueldo":"132","_identidad":"1806199200498","_telefono":"85967485"}
 {"_codigo":"Nzlk","_nombre":"fghjkl ghjkl","_correo":"ghj@hn.jm","_sueldo":"1455","_identidad":"1526066611545","_telefono":"25634152"}
 {"_codigo":"Fq53","_nombre":"fghjk ghjkl","_correo":"ghjk@jh.jm","_sueldo":"456","_identidad":"1806199300498","_telefono":"85965263"}
+{"_codigo":"ja73","_nombre":"HJKLÑ","_correo":"GHJKL","_sueldo":"852","_identidad":"852","_telefono":"852"}
+{"_codigo":"Qv93","_nombre":"bnm,.","_correo":"ghj","_sueldo":"bnm,.","_identidad":"g","_telefono":"fghjkl"}
+{"_codigo":"YC83","_nombre":"hjkl","_correo":"hjkl","_sueldo":"ghjk","_identidad":"fghjk","_telefono":"ghjkl"}
+{"_codigo":"JD84"}
+{"_codigo":"wc55"}
+{"_codigo":"eN20","_nombre":"hjk","_correo":"ghjk","_sueldo":"ghjkl","_identidad":"ghkl","_telefono":"ghjk"}
+{"_codigo":"OG68","_nombre":"ghjkl","_correo":"bnm","_sueldo":"hkl","_identidad":"khjk","_telefono":"ghjk"}

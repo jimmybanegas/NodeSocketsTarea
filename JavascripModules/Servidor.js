@@ -10,26 +10,31 @@ require('net').createServer(function (socket) {
     console.log("connected");
     socket.on('data', function (data) {
         var arch= new Archivo();
-       // console.log(data.toString());
 
         var opcion = (data.toString()).substring(0, (data.toString()).indexOf("{"));
 
-        var obje= (data.toString()).substring(opcion.length,(data.toString()).length);
+        if(data.toString().length>opcion.length)
+             var obje= (data.toString()).substring(opcion.length,(data.toString()).length);
 
         console.log(opcion)
 
         if(opcion=='Guardar'){
             arch.escribirArchivo(obje)
-            var l = arch.buscar('020')
-            var l2= arch.buscar('520')
-            arch.editar(l,l2)
-
         }
         else if(opcion=='Buscar'){
+            var parsedObj = JSON.parse(obje);
 
+            console.log(parsedObj.codigo)
+
+            var emp =arch.buscar(parsedObj.codigo)
+                socket.write(emp);
+                socket.pipe(socket);
         }
         else if(opcion=='Listar'){
 
+            var emp =arch.listar()
+            socket.write(emp);
+            socket.pipe(socket);
         }
         else if(opcion=='Modificar'){
 

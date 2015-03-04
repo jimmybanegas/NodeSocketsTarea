@@ -38,7 +38,7 @@ method.buscar = function (codigo) {
            return array[i];
         }
     }
-    return ''
+    return ' '
 }
 
 method.listar= function () {

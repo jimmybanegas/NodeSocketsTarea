@@ -5,19 +5,17 @@
 
 var method = OpcionesDeMenu.prototype;
 
-
 var Empleado = require("./Empleado.js")
-var Menu = require("./Menu.js")
 var Cliente = require("./Cliente.js")
+
 
 function OpcionesDeMenu(){}
 
 var prompt = require('prompt');
 
 method.agregar =  function(){
+
     prompt.start();
-
-
     return prompt.get(propertiesAgregar, function (err, result) {
         if (err) {
             return onErr(err);
@@ -27,18 +25,17 @@ method.agregar =  function(){
 
         var cod= emp.getNextCodigo()
 
-         emp._codigo=cod
-         emp._nombre= result.nombre
-         emp._correo=result.correo
-         emp._sueldo= result.salario
-         emp._identidad=result.identidad
-         emp._telefono=result.telefono
+        emp._nombre= result.nombre
+        emp._correo=result.correo
+        emp._sueldo= result.salario
+        emp._identidad=result.identidad
+        emp._telefono=result.telefono
 
         var userString = JSON.stringify(emp);
 
-        console.log(userString)
-
         var c = new Cliente()
+
+        console.log(userString)
 
         var client = c.iniciarCliente()
 
@@ -52,21 +49,32 @@ method.buscar = function(){
 
     prompt.get(propertiesBuscar, function (err, result) {
         if (err) { return onErr(err); }
-        console.log('Command-line input received:');
-        console.log('  Username: ' + result.username);
+        var c = new Cliente()
+
+        var userString = JSON.stringify(result);
+
+        var client = c.iniciarCliente()        //console.log(userString)
+
+        client.write('Buscar' + userString)
+
+        client.on('data', function(data) {
+            console.log('Received: ' + data);
+            client.destroy(); // kill client after server's response
+        });
     });
+
 }
 
 method.listar = function(){
-    prompt.start();
+    var c = new Cliente()
+    var client = c.iniciarCliente()        //console.log(userString)
 
-    return prompt.get(propertiesAgregar, function (err, result) {
-        if (err) { return onErr(err); }
-        console.log('Command-line input received:');
-        console.log('  Username: ' + result.username);
-        console.log('  Password: ' + result.password);
+    client.write('Listar')
+
+    client.on('data', function(data) {
+        console.log('Received: ' + data);
+        client.destroy(); // kill client after server's response
     });
-
 }
 
 method.tasas = function(){

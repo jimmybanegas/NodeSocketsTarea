@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="61d9758b-93bd-4e86-a444-1ec0afba3c3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavascripModules/Archivos.js" afterPath="$PROJECT_DIR$/JavascripModules/Archivos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavascripModules/Empleado.js" afterPath="$PROJECT_DIR$/JavascripModules/Empleado.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavascripModules/Empleados.txt" afterPath="$PROJECT_DIR$/JavascripModules/Empleados.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavascripModules/Menu.js" afterPath="$PROJECT_DIR$/JavascripModules/Menu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavascripModules/OpcionesDeMenu.js" afterPath="$PROJECT_DIR$/JavascripModules/OpcionesDeMenu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavascripModules/Servidor.js" afterPath="$PROJECT_DIR$/JavascripModules/Servidor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavascripModules/TasaDeCambio.js" afterPath="$PROJECT_DIR$/JavascripModules/TasaDeCambio.js" />
@@ -34,14 +34,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Cliente.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JavascripModules/Cliente.js">
+      <file leaf-file-name="Menu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavascripModules/Menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5924933" vertical-offset="0" max-vertical-offset="373">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#50#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="901">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,42 +47,18 @@
       <file leaf-file-name="Servidor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavascripModules/Servidor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="833">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="918">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Validaciones.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavascripModules/Validaciones.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="748">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#50#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavascripModules/Menu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="867">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#50#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpcionesDeMenu.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OpcionesDeMenu.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JavascripModules/OpcionesDeMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1072" max-vertical-offset="2669">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.19261214" vertical-offset="1032" max-vertical-offset="2805">
+              <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -94,7 +68,31 @@
         <entry file="file://$PROJECT_DIR$/JavascripModules/Empleado.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#50#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TasaDeCambio.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavascripModules/TasaDeCambio.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#50#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Archivos.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavascripModules/Archivos.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="368" max-vertical-offset="1190">
+              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
               <folding>
                 <element signature="e#0#50#0" expanded="false" />
               </folding>
@@ -112,13 +110,13 @@
       <list>
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/JavascripModules/Validaciones.js" />
-        <option value="$PROJECT_DIR$/JavascripModules/Menu.js" />
         <option value="$PROJECT_DIR$/JavascripModules/Cliente.js" />
-        <option value="$PROJECT_DIR$/JavascripModules/Servidor.js" />
+        <option value="$PROJECT_DIR$/JavascripModules/Empleado.js" />
+        <option value="$PROJECT_DIR$/JavascripModules/Menu.js" />
         <option value="$PROJECT_DIR$/JavascripModules/Archivos.js" />
         <option value="$PROJECT_DIR$/JavascripModules/TasaDeCambio.js" />
+        <option value="$PROJECT_DIR$/JavascripModules/Servidor.js" />
         <option value="$PROJECT_DIR$/JavascripModules/OpcionesDeMenu.js" />
-        <option value="$PROJECT_DIR$/JavascripModules/Empleado.js" />
       </list>
     </option>
   </component>
@@ -218,7 +216,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.Menu.js">
+  <component name="RunManager" selected="Node.js.Servidor.js">
     <configuration default="false" name="Menu.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="Menu.js" working-dir="$PROJECT_DIR$/JavascripModules">
       <RunnerSettings RunnerId="Basic" />
       <RunnerSettings RunnerId="debuggableProgram" />
@@ -723,16 +721,16 @@
       <workItem from="1425187174281" duration="5357000" />
       <workItem from="1425231031867" duration="10306000" />
       <workItem from="1425350100092" duration="13581000" />
-      <workItem from="1425436901567" duration="7204000" />
+      <workItem from="1425436901567" duration="13413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45179000" />
+    <option name="totallyTimeSpent" value="51388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1382" height="784" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -744,7 +742,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40592593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39703703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.121522695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -817,9 +815,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="867">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -893,9 +889,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -971,9 +965,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="341" max-vertical-offset="1275">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,9 +1001,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="356" max-vertical-offset="1088">
           <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,16 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavascripModules/Archivos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.IntelliJIdea14/system/extLibs/nodejs-v0.12.0-src/core-modules-sources/lib/events.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04557641" vertical-offset="1360" max-vertical-offset="5168">
@@ -1062,38 +1042,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavascripModules/TasaDeCambio.js">
+    <entry file="file://$PROJECT_DIR$/JavascripModules/Cliente.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3163539" vertical-offset="52" max-vertical-offset="425">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavascripModules/OpcionesDeMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1072" max-vertical-offset="2669">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavascripModules/Empleado.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavascripModules/Menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="867">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.45576409" vertical-offset="0" max-vertical-offset="373">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="e#0#50#0" expanded="false" />
           </folding>
@@ -1102,29 +1054,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavascripModules/Validaciones.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="748">
+        <state vertical-scroll-proportion="0.22788204" vertical-offset="136" max-vertical-offset="748">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#0#50#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavascripModules/TasaDeCambio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavascripModules/Archivos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="368" max-vertical-offset="1190">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavascripModules/Menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="901">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavascripModules/Servidor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="833">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="918">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavascripModules/Cliente.js">
+    <entry file="file://$USER_HOME$/.IntelliJIdea14/system/extLibs/nodejs-v0.12.0-src/core-modules-sources/lib/net.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5924933" vertical-offset="0" max-vertical-offset="373">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33245382" vertical-offset="10142" max-vertical-offset="24463">
+          <caret line="623" column="10" selection-start-line="623" selection-start-column="10" selection-end-line="623" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavascripModules/Empleado.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
           <folding>
             <element signature="e#0#50#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavascripModules/OpcionesDeMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19261214" vertical-offset="1032" max-vertical-offset="2805">
+          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
