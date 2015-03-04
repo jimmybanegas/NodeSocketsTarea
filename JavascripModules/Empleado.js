@@ -14,12 +14,18 @@ function Empleado(codigo, nombre, email, sueldo, id, tel){
     this._telefono = tel;
 }
 
-method.getAge = function() {
-    return this;
-};
-
 method.getNextCodigo=function(){
-  return 1+3;
+    var text = "";
+    var lt = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    var nm = "0123456789"
+
+    for( var i=0; i < 2; i++ )
+        text += lt.charAt(Math.floor(Math.random() * lt.length));
+
+    for( var i=0; i < 2; i++ )
+        text += nm.charAt(Math.floor(Math.random() * nm.length));
+
+    return text;
 };
 
 

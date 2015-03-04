@@ -35,7 +35,7 @@ method.buscar = function (codigo) {
     for(i in array) {
         var parsedObj = JSON.parse(array[i]);
         if(parsedObj._codigo==codigo){
-           return parsedObj;
+           return array[i];
         }
     }
     return ''
@@ -48,14 +48,20 @@ method.listar= function () {
 }
 
 method.editar = function(anterior,nuevo){
-    var fs = require('fs');
+    var fs = require('fs')
+    fs.readFile('Empleados.txt', 'utf8', function (err,data) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log(nuevo)
+        console.log(anterior)
 
-    var array = fs.readFileSync('Empleados.txt').toString().split("\n");
-    for(i in array) {
+        var result = data.replace(anterior, nuevo);
 
-       array[i].replace(/anterior/gi,nuevo)
-    }
-    return false
+        fs.writeFile('Empleados.txt', result, 'utf8', function (err) {
+            if (err) return console.log(err);
+        });
+    });
 }
 
 module.exports = Archivos;

@@ -17,15 +17,26 @@ var prompt = require('prompt');
 method.agregar =  function(){
     prompt.start();
 
+
     return prompt.get(propertiesAgregar, function (err, result) {
         if (err) {
             return onErr(err);
         }
 
-        var emp = new Empleado(result.codigo, result.nombre, result.correo,
-            result.salario, result.identidad, result.telefono)
+        var emp= new Empleado()
+
+        var cod= emp.getNextCodigo()
+
+         emp._codigo=cod
+         emp._nombre= result.nombre
+         emp._correo=result.correo
+         emp._sueldo= result.salario
+         emp._identidad=result.identidad
+         emp._telefono=result.telefono
 
         var userString = JSON.stringify(emp);
+
+        console.log(userString)
 
         var c = new Cliente()
 
@@ -77,9 +88,6 @@ method.modificar = function(codigo){
 
 
 var propertiesAgregar = [
-    {
-        name: 'codigo'
-    },
     {
         name: 'nombre',
         validator: /^[A-Za-záéíóúñ]{2,}([\s][A-Za-záéíóúñ]{2,})+$/
