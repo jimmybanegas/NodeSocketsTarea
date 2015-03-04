@@ -44,7 +44,12 @@ method.buscar = function (codigo) {
 method.listar= function () {
     var fs = require('fs');
     var array = fs.readFileSync('Empleados.txt').toString().split("\n");
-   return array
+    var txt='';
+    for(i in array) {
+        if(array[i]!='')
+             txt+=array[i]+'\n'
+    }
+   return txt
 }
 
 method.editar = function(anterior,nuevo){

@@ -25,6 +25,7 @@ method.agregar =  function(){
 
         var cod= emp.getNextCodigo()
 
+        emp._codigo=cod
         emp._nombre= result.nombre
         emp._correo=result.correo
         emp._sueldo= result.salario
@@ -69,10 +70,15 @@ method.listar = function(){
     var c = new Cliente()
     var client = c.iniciarCliente()        //console.log(userString)
 
-    client.write('Listar')
+    client.write('Listar'+'{}')
 
     client.on('data', function(data) {
-        console.log('Received: ' + data);
+        var array = data.toString().split('\n')
+        for(i in array) {
+            var parsedObj = JSON.parse(array[i]);
+            console.log(i)
+            console.log(array[i])
+        }
         client.destroy(); // kill client after server's response
     });
 }

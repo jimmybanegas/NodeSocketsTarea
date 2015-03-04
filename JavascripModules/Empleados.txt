@@ -1,4 +1,4 @@
-{"_codigo":"005","_nombre":"juan per","_correo":"j.per@ad.hn","_sueldo":"2500","_identidad":"1806199800498","_telefono":"25116523"}
+﻿{"_codigo":"005","_nombre":"juan per","_correo":"j.per@ad.hn","_sueldo":"2500","_identidad":"1806199800498","_telefono":"25116523"}
 {"_codigo":"008","_nombre":"jimmy ran","_correo":"j.hn@me.com","_sueldo":"2600","_identidad":"1806199200489","_telefono":"25145623"}
 {"_codigo":"0010","_nombre":"kevin za","_correo":"ke.nh@hn.com","_sueldo":"1200","_identidad":"1245122200165","_telefono":"95236541"}
 {"_codigo":"520","_nombre":"vbnm fghnj","_correo":"ghjk@fghj.gh","_sueldo":"2500","_identidad":"1806199300498","_telefono":"85623245"}
@@ -24,7 +24,4 @@
 {"_codigo":"ja73","_nombre":"HJKLÑ","_correo":"GHJKL","_sueldo":"852","_identidad":"852","_telefono":"852"}
 {"_codigo":"Qv93","_nombre":"bnm,.","_correo":"ghj","_sueldo":"bnm,.","_identidad":"g","_telefono":"fghjkl"}
 {"_codigo":"YC83","_nombre":"hjkl","_correo":"hjkl","_sueldo":"ghjk","_identidad":"fghjk","_telefono":"ghjkl"}
-{"_codigo":"JD84"}
-{"_codigo":"wc55"}
-{"_codigo":"eN20","_nombre":"hjk","_correo":"ghjk","_sueldo":"ghjkl","_identidad":"ghkl","_telefono":"ghjk"}
-{"_codigo":"OG68","_nombre":"ghjkl","_correo":"bnm","_sueldo":"hkl","_identidad":"khjk","_telefono":"ghjk"}
+{"_codigo":"IN97","_nombre":"jiuan quere","_correo":"k.lm@add.hn","_sueldo":"1230","_identidad":"1806199300498","_telefono":"85967485"}
