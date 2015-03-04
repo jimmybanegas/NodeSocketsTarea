@@ -16,17 +16,11 @@ require('net').createServer(function (socket) {
         if(data.toString().length>opcion.length)
              var obje= (data.toString()).substring(opcion.length,(data.toString()).length);
 
-        console.log(obje.toString())
-
-        console.log(opcion)
-
         if(opcion=='Guardar'){
             arch.escribirArchivo(obje)
         }
         else if(opcion=='Buscar'){
             var parsedObj = JSON.parse(obje);
-
-            console.log(parsedObj.codigo)
             var emp =arch.buscar(parsedObj.codigo)
                 socket.write(emp);
                 socket.pipe(socket);
@@ -37,9 +31,16 @@ require('net').createServer(function (socket) {
             socket.pipe(socket);
         }
         else if(opcion=='Modificar'){
+            var parsedObj = JSON.parse(obje);
+
+            var emp =arch.buscar(parsedObj._codigo)
+
+            console.log(emp)
+            console.log(obje)
+
+            arch.editar(emp,obje)
 
         }
-
         var parsedObj = JSON.parse(obje);
 
     });

@@ -58,8 +58,6 @@ method.editar = function(anterior,nuevo){
         if (err) {
             return console.log(err);
         }
-        console.log(nuevo)
-        console.log(anterior)
 
         var result = data.replace(anterior, nuevo);
 

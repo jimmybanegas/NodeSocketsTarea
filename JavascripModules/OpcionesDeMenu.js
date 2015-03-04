@@ -63,7 +63,6 @@ method.buscar = function(){
             client.destroy(); // kill client after server's response
         });
     });
-
 }
 
 method.listar = function(){
@@ -75,9 +74,12 @@ method.listar = function(){
     client.on('data', function(data) {
         var array = data.toString().split('\n')
         for(i in array) {
-            var parsedObj = JSON.parse(array[i]);
-            console.log(i)
-            console.log(array[i])
+           // var parsedObj = JSON.parse(array[i]);
+            if(array[i]!=''){
+                var parsedObj = JSON.parse(array[i]);
+                console.log(parsedObj._codigo+' '+parsedObj._nombre+'       '+parsedObj._correo+
+                '       '+parsedObj._identidad+ '    '+parsedObj._telefono+ '    '+parsedObj._sueldo)
+            }
         }
         client.destroy(); // kill client after server's response
     });
@@ -89,15 +91,27 @@ method.tasas = function(){
 
 method.modificar = function(codigo){
     prompt.start();
-
     prompt.get(propertiesModificar, function (err, result) {
         if (err) { return onErr(err); }
-        console.log('Command-line input received:');
-        console.log('  Username: ' + result.username);
-        console.log('  Password: ' + result.password);
+
+        var emp = new Empleado(result.codigo,result.NuevoNombre,result.NuevoCorreo,result.NuevoSalario,
+                  result.NuevaIdentidad,result.NuevoTelefono)
+
+        var userString = JSON.stringify(emp);
+
+        var c = new Cliente()
+
+        var client = c.iniciarCliente()
+
+        client.write('Modificar' + userString)
+
+        client.on('data', function(data) {
+            console.log( + data);
+            client.destroy(); // kill client after server's response
+        });
+
     });
 
-    return prompt;
 }
 
 
@@ -133,23 +147,26 @@ var propertiesBuscar = [
 
 var propertiesModificar = [
     {
-        name: 'nombre',
+        name: 'codigo'
+    },
+    {
+        name: 'NuevoNombre',
         validator: /^[A-Za-záéíóúñ]{2,}([\s][A-Za-záéíóúñ]{2,})+$/
     },
     {
-        name: 'correo',
+        name: 'NuevoCorreo',
         validator: /^[(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,4}$/
     },
     {
-        name: 'salario',
+        name: 'NuevoSalario',
         validator: /[+-]?\d+(\.\d+)?/
     },
     {
-        name: 'identidad',
+        name: 'NuevaIdentidad',
         validator: /^[0-9]{13}$/
     },
     {
-        name: 'telefono',
+        name: 'NuevoTelefono',
         validator: /^[0-9]{8}$/
     }
 ];
